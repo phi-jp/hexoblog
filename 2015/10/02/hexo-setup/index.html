@@ -8,10 +8,8 @@
   <meta name="description" content="setup1234$ npm install hexo-cli -g$ hexo init hexoblog$ cd hexoblog$ npm install
 launch1$ hexo server
 access to  http://0.0.0.0:4000/
-deploygithub で
-hexoblog というリポジトリを作っておく.
-_config.yml を開いて
-1234deplo">
+deploygithub リポジトリを作るgithub で hexoblog というリポジトリを作っておく.
+deploy 先を設定">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo setup">
 <meta property="og:url" content="http://yoursite.com/2015/10/02/hexo-setup/index.html">
@@ -19,20 +17,16 @@ _config.yml を開いて
 <meta property="og:description" content="setup1234$ npm install hexo-cli -g$ hexo init hexoblog$ cd hexoblog$ npm install
 launch1$ hexo server
 access to  http://0.0.0.0:4000/
-deploygithub で
-hexoblog というリポジトリを作っておく.
-_config.yml を開いて
-1234deplo">
-<meta property="og:updated_time" content="2015-10-02T04:41:59.000Z">
+deploygithub リポジトリを作るgithub で hexoblog というリポジトリを作っておく.
+deploy 先を設定">
+<meta property="og:updated_time" content="2015-10-02T04:47:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo setup">
 <meta name="twitter:description" content="setup1234$ npm install hexo-cli -g$ hexo init hexoblog$ cd hexoblog$ npm install
 launch1$ hexo server
 access to  http://0.0.0.0:4000/
-deploygithub で
-hexoblog というリポジトリを作っておく.
-_config.yml を開いて
-1234deplo">
+deploygithub リポジトリを作るgithub で hexoblog というリポジトリを作っておく.
+deploy 先を設定">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -103,18 +97,18 @@ _config.yml を開いて
         <h2 id="setup">setup</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>npm install hexo-cli -g</span><br><span class="line"><span class="variable">$ </span>hexo init hexoblog</span><br><span class="line"><span class="variable">$ </span>cd hexoblog</span><br><span class="line"><span class="variable">$ </span>npm install</span><br></pre></td></tr></table></figure>
 <h2 id="launch">launch</h2><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
 <p>access to  <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a></p>
-<h2 id="deploy">deploy</h2><p>github で</p>
-<p>hexoblog というリポジトリを作っておく.</p>
-<p><code>_config.yml</code> を開いて</p>
+<h2 id="deploy">deploy</h2><h3 id="github_リポジトリを作る">github リポジトリを作る</h3><p>github で hexoblog というリポジトリを作っておく.</p>
+<h3 id="deploy_先を設定する">deploy 先を設定する</h3><p><code>_config.yml</code> を開いて</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:phi-jp/hexoblog.git</span><br><span class="line">  <span class="attribute">branch</span>: gh-pages</span><br></pre></td></tr></table></figure>
-<p>root を</p>
+<h3 id="ルートを設定">ルートを設定</h3><p>root を</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">root</span>: <span class="string">/</span></span><br></pre></td></tr></table></figure>
 <p>↓<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">root</span>: <span class="string">/hexoblog</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line"><span class="string">``</span></span></span><br></pre></td></tr></table></figure>
-<p>$ hexo d -g<br>```</p>
+<h3 id="setup-1">setup</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>npm install hexo-deployer-git --save</span><br><span class="line"><span class="string">``</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### deploy</span></span><br></pre></td></tr></table></figure>
+<p>$ hexo deploy -g<br>```</p>
 <h2 id="Ref">Ref</h2><ul>
 <li><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></li>
 <li><a href="http://tech.admax.ninja/2014/09/11/environment-of-hexo/" target="_blank" rel="external">http://tech.admax.ninja/2014/09/11/environment-of-hexo/</a></li>
+<li><a href="http://raimon49.github.io/2015/04/25/create-blog-with-hexo.html" target="_blank" rel="external">http://raimon49.github.io/2015/04/25/create-blog-with-hexo.html</a></li>
 </ul>
 
       
