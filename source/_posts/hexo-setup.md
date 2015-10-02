@@ -24,10 +24,12 @@ access to  http://0.0.0.0:4000/
 ## deploy
 
 
-github で
+### github リポジトリを作る
 
-hexoblog というリポジトリを作っておく.
+github で hexoblog というリポジトリを作っておく.
 
+
+### deploy 先を設定する
 
 `_config.yml` を開いて
 
@@ -37,6 +39,8 @@ deploy:
   repo: git@github.com:phi-jp/hexoblog.git
   branch: gh-pages
 ```
+
+### ルートを設定
 
 root を
 
@@ -48,17 +52,24 @@ root: /
 root: /hexoblog
 ```
 
+
+### setup
+
 ```
 $ npm install hexo-deployer-git --save
 ``
 
+### deploy
+
 ```
-$ hexo d -g
+$ hexo deploy -g
 ```
 
 
 ## Ref
 
 - https://hexo.io/
+- http://tech.admax.ninja/2014/09/11/environment-of-hexo/
+- http://raimon49.github.io/2015/04/25/create-blog-with-hexo.html
 
-- 
+
