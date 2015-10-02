@@ -1,146 +1,283 @@
-<!DOCTYPE html>
-<html>
+/* 
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Archives: 2015/10 | Hexo</title>
-  <meta name="description" content="" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	|Globals
 
-  <link rel="stylesheet" type="text/css" href="/hexoblog/css/screen.css" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+*/
 
-  <meta name="generator" content="Hexo">
+  #page-header{
+    margin-bottom: 4.5em;
+  }
 
-  
-  
-  
+  #masthead{
+    width: 60%;
+    max-width: 54rem;
+    margin: 3em 0 0 3rem;
+    overflow: auto;
+  }
 
-  
-</head>
+  #site-title{
+    font-size: 1.5em;
+    float: left;
+    margin-right: 1.5rem;    
+  }
+
+  #site-slogan{
+    font-size: 0.75em;
+    border-left: solid 1px @border-color;
+    padding-left: 1.5rem;
+    margin-top: 0.85em;
+    float: left;
+    line-height: 1.75;
+  }
+
+  #content{
+    clear: both;
+  }
+
+  #content header{
+    width: 60%;
+    max-width: 54rem;
+    margin: 0 0 0 3rem;
+    position: relative;
+  }
+
+  .article-list li{
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  .article-list {
+
+    h2, h3{
+      font-size: 1em;
+    }
+
+  }
+
+  article .meta, .article-list .meta{
+    margin-bottom: 2.25rem;
+    margin-top: -1.5rem;
+
+		font-size: 0.75em;
+		color: #777;
+  }
+
+  .article-list .meta{
+    margin-top: -0.75em;
+  }
+
+  article h2, .article-list h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #article-list-pagination{
+    width: 60%;
+    max-width: 54rem;
+    margin: 0 0 0 3rem;
+    position: relative;
+
+    font-size: 0.75em;
+  }
 
 
-<body class="home-template">
+  #content article{
+    width: 60%;
+    max-width: 54rem;
+    margin: 0 0 0 3rem;
+    position: relative;
+  }
 
-  <header class="site-head"  style="background-image: url(//blog.ghost.org/content/images/2013/Nov/cover.png)" >
-    <div class="vertical">
-        <div class="site-head-content inner">
-             <a class="blog-logo" href="/hexoblog/"><img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo"/></a> 
-            <h1 class="blog-title">Hexo</h1>
-            <h2 class="blog-description"></h2>
-        </div>
-    </div>
-</header>
-  
-<main class="content" role="main">
-  
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2015-10-02T04:27:36.000Z" itemprop="datePublished">
-          2015-10-02
-      </time>
+  article h3{
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;   
+  }
+
+  article h4{
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
+
+  article img{
+    max-width: 100%;
+  }
+
+
+
+  figure[class*="lang"] {
+    margin-bottom: 1.5em;
+  }
+
+  figure[class*="lang"] table,
+  figure[class*="lang"] pre {
+    width: 100%;
+    border: solid 0.05em @code-border;
+    display: block;
+    overflow: auto;
+    background: @code-background;
+  }
+
+  figure[class*="lang"] pre{
+    padding: 0 6px;
+  }
+
+  figure[class*="lang"] table pre{
+    margin-bottom: 0;
+  }
+
+  td.gutter {
+    width: 30px;
+    padding: 0 4px;
+    background: @code-background;
+    border-right: solid 1px @code-border;
+    text-align: right;
+  }
+
+  td.code {
+    width: 100%;
+    padding: 0 6px;
+    background: @code-background;
+  }
+
+
+
+
+  #article-pagination{
+    width: 60%;
+    max-width: 54rem;
+    margin: 0 0 0 3rem;
+    position: relative;
+
+    font-size: 0.75em;
+  }
+
+  #article-pagination a{
+    position: absolute;
+    top: 50%;
+  }
+
+  #article-pagination .prev{
+    left: 0;
+  }
+
+  #article-pagination .next{
+    right: 0;
+  } 
+
+  #page-footer{
+    padding: 0.65rem 0 0;
+    border-top: 0.1rem dotted @border-color;
+    margin: 7.5rem 0 3rem;
+  }
+
+
+  #page-footer section{
+    width: 60%;
+    max-width: 54rem;
+    margin: 0 0 0 3rem;
     
-</span>
-      <h2 class="post-title"><a href="/hexoblog/2015/10/02/hexo-setup/">hexo setup</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
-        setup1234$ npm install hexo-cli -g$ hexo init hexoblog$ cd hexoblog$ npm install
-launch1$ hexo server
-access to  http://0.0.0.0:4000/
-deploygithub リポジトリを作るgithub で hexoblog というリポジトリを作っておく.
-deploy 先を設定する_config.yml を開いて
-1
-      
-      </p>
-      
-      <p>
-          <a href="/hexoblog/2015/10/02/hexo-setup/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
-  
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2015-10-02T02:43:22.000Z" itemprop="datePublished">
-          2015-10-02
-      </time>
-    
-</span>
-      <h2 class="post-title"><a href="/hexoblog/2015/10/02/My-New-Post/">My New Post</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
-        
-      
-      </p>
-      
-      <p>
-          <a href="/hexoblog/2015/10/02/My-New-Post/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
-  
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2015-10-02T02:42:33.000Z" itemprop="datePublished">
-          2015-10-02
-      </time>
-    
-</span>
-      <h2 class="post-title"><a href="/hexoblog/2015/10/02/hello-world/">Hello World</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
-      
-      </p>
-      
-      <p>
-          <a href="/hexoblog/2015/10/02/hello-world/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
-  
-  <nav class="pagination" role="pagination">
-    
-    <span class="page-number">Page 1 of 1</span>
-    
-  </nav>
-</main>
+    font-size: 0.75em;
+
+    overflow: auto;
+  }
+
+  #footer-menu ul{
+    list-style-type: none;
+    float: left;
+  }
+
+  #footer-menu ul li{
+    display: block;
+    float: left;
+    margin-right: 1rem;
+  }
 
 
-  
-<footer class="site-footer">
-  
-  <div class="inner">
-     <section class="copyright">All content copyright <a href="/hexoblog/">Hexo</a> &copy; 2014 &bull; All rights reserved.</section>
-     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
-  </div>
-</footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<script type="text/javascript" src="/hexoblog/js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="/hexoblog/js/index.js"></script>
+/* 
 
 
+  |Media Queries
 
+*/
 
+  @media only screen and (max-width: 560px) {
 
+    #masthead {
+      width: 90%;
+      margin: 3em auto 0;
+    }
 
-</body>
-</html>
+    #site-slogan {
+      display: none;
+    }
+
+    #content{ 
+      article, 
+      header {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    article .meta {
+      margin-top: -2.7em;
+      margin-bottom: 1.8em;
+      font-size: 0.625em;
+      line-height: 1.8;
+    }
+
+    #article-list-pagination, 
+    #article-pagination {
+      width: 90%;
+      margin: 0 auto;
+      overflow: auto;
+
+      a {
+        position: relative;
+        display: block;
+        float: left;
+        clear: both;
+      }
+    }
+
+    #page-footer {
+      margin-top: 4.5rem;
+    }
+
+    #page-footer section {
+      width: 90%;
+      font-size: 0.75rem;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media only screen and (min-width: 561px) and (max-width: 1080px) {
+
+    #masthead{
+      width: 90%;
+      margin: 3em auto 0;
+    }    
+
+    #content{ 
+      article, 
+      header {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    #article-list-pagination,
+    #article-pagination {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    #page-footer section{
+      width: 90%;
+      margin: 0 auto;
+    }        
+
+  }
