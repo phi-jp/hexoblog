@@ -49,5 +49,16 @@ root: /hexoblog
 ```
 
 ```
+$ npm install hexo-deployer-git --save
+``
+
+```
 $ hexo d -g
 ```
+
+
+## Ref
+
+- https://hexo.io/
+
+- 
