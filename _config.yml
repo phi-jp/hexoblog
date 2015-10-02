@@ -63,8 +63,17 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-# theme: landscape
-theme: casper
+theme: landscape
+# theme: casper
+# theme: jade-barebone
+# theme: alberta
+# theme: tranquilpeak-hexo-theme
+
+theme_config:
+  menu:
+    Home: /hexoblog/
+    Archives: /hexoblog/archives
+    About: /hexoblog/about
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

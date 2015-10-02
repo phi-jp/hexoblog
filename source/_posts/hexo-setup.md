@@ -71,5 +71,7 @@ $ hexo deploy -g
 - https://hexo.io/
 - http://tech.admax.ninja/2014/09/11/environment-of-hexo/
 - http://raimon49.github.io/2015/04/25/create-blog-with-hexo.html
-
+- http://3100.github.io/log/2015/08/10/hexo-with-subdirectory/
+- http://qiita.com/okmttdhr/items/9f087e0dc88e4d3724fb
+- [めっちゃオシャレ](https://github.com/widatama/hexo-jade-barebone)
 
